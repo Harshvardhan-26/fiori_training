@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ui5.sap.com/resources/sap-ui-core.js" 
+                    data-sap-ui-libs="sap.m"         
+                    data-sap-ui-theme="sap_bluecrystal"
+                    data-sap-ui-resourceroots='{
+                       "com.soy.sin.jd": "./"
+                    }'
+                    data-sap-ui-bindingSyntax="complex"
+        ></script>
+        <script>
+            var oComp = new sap.ui.core.ComponentContainer({
+                name: 'com.soy.sin.jd'
+            });
+
+            oComp.placeAt("content");
+        </script>
+        <style>
+            body{
+                margin: 0;
+            }
+        </style>
+</head>
+
+
+<body>
+    <div class="body" id="content">
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+    "api": {
+        "api_internal_host": "localhost",
+        "api_internal_port": "1894",
+        "api_internal_https": false
+    },
+    "Port":8094,
+    "liveReload":35094,
+    "login-auto-submit":false,
+    "hiddenTiles":false,
+    "diapi":true,
+    "diapiBase":"localhost:3005",
+    "showFeaturesInDevelopment":true
+}

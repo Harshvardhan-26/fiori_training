@@ -1,0 +1,5 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName= "com.soy.sin.jd.controller.View1">
+    <Page title="Kakashi" >
+        <Image src="https://staticg.sportskeeda.com/editor/2022/06/1acf7-16544386413156-1920.jpg"></Image>
+    </Page>
+</mvc:View>

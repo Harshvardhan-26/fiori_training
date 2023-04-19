@@ -1,0 +1,43 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName= "com.soy.sin.jd.controller.View1">
+    <Page title="Fruits001" >
+        <headerContent>
+            <Button icon="sap-icon://open-command-field" text="" press="onScreening" ></Button>
+        </headerContent>
+        <content>
+            <SearchField id="idSearch" search="onSearch" liveChange="onSearch"> </SearchField>
+            <List id="idList" selectionChange="onItemSelect" items="{/ProductSet}" mode="SingleSelectMaster" delete="onDelete">
+                <headerToolbar >
+                    <Toolbar>  
+                        <!-- <ToolbarSpacer/> -->
+                        <Button icon="sap-icon://delete" press="onItemDelete" tooltip="Delete Items" >
+                            
+                        </Button>
+                        <Button icon="sap-icon://heart" text="" press="onTouch" ></Button>
+                    </Toolbar>
+                </headerToolbar>
+                <items>
+                    <ObjectListItem title="{PRODUCT_ID}" intro="{CATEGORY}" number="{PRICE}" numberUnit="{CURRENCY_CODE}" icon="sap">
+                        <firstStatus>
+                            <ObjectStatus
+                                text="{SUPPLIER_NAME}"
+                                state="{ path:'status',formatter:'.formatter.getStatus'}">                       
+                            </ObjectStatus>
+                        </firstStatus>
+                    </ObjectListItem>
+                </items>
+            </List>
+        </content>
+
+
+        <footer>
+            <Toolbar>
+                <ToolbarSpacer/>
+                <Button icon="sap-icon://add" tooltip="Add New Product" press="onAdd"></Button>
+            </Toolbar>
+            
+
+
+        </footer>
+    
+    </Page>
+</mvc:View>
